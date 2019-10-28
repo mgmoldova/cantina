@@ -1,0 +1,1113 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Gantina: demo page </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/favicon.png">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+        <script type="text/javascript" src="./js/main.js"></script>
+        
+        <style>
+            .contact-section {
+                background: url(./images/map-bg.png) #2d3237 no-repeat 50%;
+                background-size: cover;
+                background-position: center center;
+                padding: 100px 0 80px;
+                display: block;
+                position: relative;
+            }
+            
+            input[id^="spoiler"]{
+             display: none;
+            }
+            input[id^="spoiler"] + label {
+            
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                padding: 15px 20px;
+                background: #1abc9c;
+                color: #fff;
+                text-align: center;
+                font-size: 24px;
+                border-radius: 100px;
+                cursor: pointer;
+                transition: all .6s;
+            }
+            input[id^="spoiler"]:checked + label {
+             color: #333;
+             background: #ccc;
+            }
+            input[id^="spoiler"] ~ .spoiler {
+             width: 90%;
+             height: 0;
+             overflow: hidden;
+             opacity: 0;
+             margin: 10px auto 0; 
+             padding: 10px; 
+             border-radius: 8px;
+             transition: all .6s;
+            }
+            input[id^="spoiler"]:checked + label + .spoiler{
+             height: auto;
+             opacity: 1;
+             padding: 10px;
+            }
+            
+            
+            
+            
+            
+            
+            input[id^="spoiler2"]{
+             display: none;
+            }
+            input[id^="spoiler2"] + label {
+            
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                padding: 15px 20px;
+                background: #1abc9c;
+                color: #fff;
+                text-align: center;
+                font-size: 24px;
+                border-radius: 100px;
+                cursor: pointer;
+                transition: all .6s;
+            }
+            input[id^="spoiler2"]:checked + label {
+             color: #333;
+             background: #ccc;
+            }
+            input[id^="spoiler2"] ~ .spoiler2 {
+             width: 90%;
+             height: 0;
+             overflow: hidden;
+             opacity: 0;
+             margin: 10px auto 0; 
+             padding: 10px; 
+             border-radius: 8px;
+             transition: all .6s;
+            }
+            input[id^="spoiler2"]:checked + label + .spoiler2{
+             height: auto;
+             opacity: 1;
+             padding: 10px;
+            }
+            
+            
+            
+            
+            input[id^="spoiler3"]{
+             display: none;
+            }
+            input[id^="spoiler3"] + label {
+            
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                padding: 15px 20px;
+                background: #1abc9c;
+                color: #fff;
+                text-align: center;
+                font-size: 24px;
+                border-radius: 100px;
+                cursor: pointer;
+                transition: all .6s;
+            }
+            input[id^="spoiler3"]:checked + label {
+             color: #333;
+             background: #ccc;
+            }
+            input[id^="spoiler3"] ~ .spoiler3 {
+             width: 90%;
+             height: 0;
+             overflow: hidden;
+             opacity: 0;
+             margin: 10px auto 0; 
+             padding: 10px; 
+             border-radius: 8px;
+             transition: all .6s;
+            }
+            input[id^="spoiler3"]:checked + label + .spoiler3{
+             height: auto;
+             opacity: 1;
+             padding: 10px;
+            }
+            
+            
+            
+            
+            
+            input[id^="spoiler4"]{
+             display: none;
+            }
+            input[id^="spoiler4"] + label {
+                display: block;
+                width: 100%;
+                margin: 0 auto;
+                padding: 15px 20px;
+                background: #1abc9c;
+                color: #fff;
+                text-align: center;
+                font-size: 24px;
+                border-radius: 100px;
+                cursor: pointer;
+                transition: all .6s;
+            }
+            input[id^="spoiler4"]:checked + label {
+             color: #333;
+             background: #ccc;
+            }
+            input[id^="spoiler4"] ~ .spoiler4 {
+             width: 90%;
+             height: 0;
+             overflow: hidden;
+             opacity: 0;
+             margin: 10px auto 0; 
+             padding: 10px; 
+             border-radius: 8px;
+             transition: all .6s;
+            }
+            input[id^="spoiler4"]:checked + label + .spoiler4{
+             height: auto;
+             opacity: 1;
+             padding: 10px;
+            }
+            
+            
+            .new-section {
+                background: #e9f0fd;
+                display: block;
+                padding: 50px 0 80px !important;
+            
+            }
+            .new-section2 {
+                background: #eee9fd;
+                display: block;
+                padding: 50px 0 80px !important;
+            
+            }
+            .new-section3 {
+                background: #f2fde9;
+                display: block;
+                padding: 50px 0 80px !important;	
+            }
+            .new-section4 {
+                background: #dffcff;
+                display: block;
+                padding: 50px 0 80px !important;	
+            }
+
+table{
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    font-family: 'Roboto', sans-serif;
+	border: 1px solid #60e2bb;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+  width: 100%;
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid #60e2bb;
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: 1px solid #60e2bb;
+}
+.tfootDeco {
+    background: linear-gradient(to left, #00a264, #00a2b1);
+    box-shadow: 0px 0px 15px #00ffd4;
+	}
+.product-number {
+    display: block;
+    background: #323232;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.product-number span {
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+    float: right;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px;
+}
+.product-number h3 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    float: left;
+    padding: 10px;
+    padding-left: 15px;
+}
+a.delButton {
+    /* display: block; */
+    opacity: 0.7;
+    text-transform: uppercase;
+    height: 50px;
+    width: 55px;
+    border-radius: 5px;
+    padding: 5px;
+    /* zoom: 0.5; */
+    overflow: hidden;
+    cursor: pointer;
+    /* font-size: 18px; */
+    font-family: monospace;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 100px 0 #FFF, 1px 76px 10px #000;
+    color: #FFF;
+    background: #ed1d25;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+a.delButton:hover {
+opacity:1;
+}
+.btn:hover, .btn:focus, .btn.focus {
+    color: #f1fffc;
+    text-decoration: none;
+	outline: none !important;
+	}
+.btn-fish {
+    color: #fff;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+	margin-top: 2%;
+    outline: none;
+	opacity: 0.9;
+}
+.btn-fish:hover {
+opacity:1;
+color: white;
+}
+.zc {
+background-image: linear-gradient(to left, rgb(75, 255, 0), #ffec07);
+    border-radius: 5px;
+	}
+
+.closed {
+    color: white;
+    padding: 3px;
+    border: 0px;
+    outline: none;
+    border-radius: 5px;
+    background: linear-gradient(to left, rgb(255, 35, 0), #ffec07);
+}
+.open {
+    color: white;
+    padding: 3px;
+    border: 0px;
+    outline: none;
+    border-radius: 5px;
+    background: linear-gradient(to left, rgb(145, 255, 0), #ffec07);
+}
+
+#mudroslov_widget_styled {
+    font-family: Helvetica, Arial;
+    font-size: 14px !important;
+    padding: 5px !important;
+    border: 2px dotted #c5c5c5 !important;
+    overflow: hidden;
+    height: auto !important;
+    border-radius: 5px !important;
+    width: 100% !important;
+	pointer-events: none;
+}
+.loading {
+display: none !important;
+}
+
+.fishCalcBox {
+	background-color: #42cfae3b;
+    padding: 10px;
+    width: 100%;
+    border: 0px;
+    margin-top: 3%;
+    border-radius: 5px;
+}
+</style>
+    
+<?
+
+function check_mobile_device() { 
+    $mobile_agent_array = array('ipad', 'iphone', 'android', 'pocket', 'palm', 'windows ce', 'windowsce', 'cellphone', 'opera mobi', 'ipod', 'small', 'sharp', 'sonyericsson', 'symbian', 'opera mini', 'nokia', 'htc_', 'samsung', 'motorola', 'smartphone', 'blackberry', 'playstation portable', 'tablet browser','Samsung','Xiaomi','zte','nubia','pixel','lg','htc');
+    $agent = strtolower($_SERVER['HTTP_USER_AGENT']);    
+    // var_dump($agent);exit;
+    foreach ($mobile_agent_array as $value) {    
+        if (strpos($agent, $value) !== false) return true;   
+    }       
+    return false; 
+}
+
+$is_mobile_device = check_mobile_device();
+if($is_mobile_device){
+echo "
+<style>
+.fishCalc {
+	width: 100%;
+    background: linear-gradient(to left,#31efc9, #1abc9c);
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 1%;
+    color: #effffc;
+    border: 1px solid #4de4c6;
+    cursor: pointer;
+    font-size: 17px;
+    outline: none;
+	opacity: 0.9;
+}
+.fishCalc:hover {
+	opacity:1;
+}
+
+.fishCount {
+	width: 100%;
+    padding: 5px;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    outline: none;
+    font-size: 17px;
+    text-align: center;
+}
+.menuBar {
+    position: relative;
+    background: linear-gradient(to right, #e1fff9, #25b7c40f);
+    z-index: 995535;
+    top: 17%;
+    width: 90%;
+    padding: 1%;
+    margin: 5% auto 3% auto;
+    border-radius: 2%;
+    box-shadow: 0px 0px 20px #cccccc;
+    /* left: 5%; */
+    opacity: 0.97;
+}
+.menuBar:hover {
+
+opacity: 1;
+
+}
+</style>
+";
+}
+else {
+echo "
+<style>
+.fishCalc {
+	width: 50%;
+    background: linear-gradient(to left,#31efc9, #1abc9c);
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 1%;
+    color: #effffc;
+    border: 1px solid #4de4c6;
+    cursor: pointer;
+    font-size: 17px;
+    outline: none;
+	opacity: 0.9;
+}
+.fishCalc:hover {
+	opacity:1;
+}
+
+.fishCount {
+	width: 50%;
+    padding: 5px;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    outline: none;
+    font-size: 17px;
+    text-align: center;
+}
+.menuBar {
+    position: fixed;
+    background: linear-gradient(to right, #e1fff9, #25b7c40f);
+    z-index: 995535;
+    top: 17%;
+    width: 17%;
+    padding: 1%;
+    margin: 0% -19%;
+    border-radius: 2%;
+    box-shadow: 0px 0px 20px #cccccc;
+    /* left: 5%; */
+    opacity: 0.97;
+}
+.menuBar:hover {
+
+opacity: 1;
+
+}
+</style>
+";
+}
+
+?>
+	
+	</head>
+	
+	
+
+
+    <body>
+
+        <!-- PRELOADER -->
+        <div id="preloader">
+            <div class="preloader-area">
+            	<div class="preloader-box">
+            		<div class="preloader"></div>
+            	</div>
+            </div>
+        </div>
+<!--
+        <section class="header-top-section">
+            <div class="container">
+                <div class="row">
+                    <div  class="col-md-6">
+                        <div class="header-top-content">
+                            <ul class="nav nav-pills navbar-left">
+                                <li><a href="#"><i class="pe-7s-call"></i><span>+373 699 98 988</span></a></li>
+                                <li><a href="#"><i class="pe-7s-mail"></i><span> info@cantina.tk</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>			
+            </div>
+        </section>
+-->
+        <header class="header-section">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+						
+						<!-- Логотип -->
+                        <a class="navbar-brand" href="#"><b>G</b>ANTINA</a>
+  
+
+
+  
+<!-- Калькулятор рыбы -->
+<button type="button" class="btn btn-fish" data-toggle="modal" data-target="#exampleModalCenter">
+  Статус кантины
+</button>
+
+<!-- Modal -->
+<div style="z-index: 9999999;" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Информация о загруженности кантины</h5>
+        
+      </div>
+
+      <div class="modal-body">
+
+<script>
+Data = new Date();
+Year = Data.getFullYear();
+Month = Data.getMonth();
+Day = Data.getDate();
+ 
+switch (Month)
+{
+  case 0: fMonth="января"; break;
+  case 1: fMonth="февраля"; break;
+  case 2: fMonth="марта"; break;
+  case 3: fMonth="апреля"; break;
+  case 4: fMonth="мае"; break;
+  case 5: fMonth="июня"; break;
+  case 6: fMonth="июля"; break;
+  case 7: fMonth="августа"; break;
+  case 8: fMonth="сентября"; break;
+  case 9: fMonth="октября"; break;
+  case 10: fMonth="ноября"; break;
+  case 11: fMonth="декабря"; break;
+}
+
+document.write("Сегодня "+Day+" "+fMonth+" "+Year+" года.");
+
+Hour = Data.getHours();
+Minutes = Data.getMinutes();
+Seconds = Data.getSeconds();
+
+document.write(" Время: "+Hour+":"+Minutes+":"+Seconds);
+
+//Говномодуль, открыта ли кантина
+var h = Data.getHours(); // Получаем текущий час
+if (h < 10 || h > 16) document.write("<br><cstatus class='closed'>На данный момент кантина закрыта.</cstatus><br>");
+else document.write("<br><cstatus class='open'>Кантина открыта, можете посетить её!</cstatus><br>");
+</script>	  
+<br>
+<script type="text/javascript" charset="utf-8">  
+    (function() {  
+    function async_load(){  
+        var s = document.createElement('script');  
+        s.type = 'text/javascript';  
+        s.async = true;  
+        s.src = 'http://www.mudroslov.ru/javascripts/widget.js';  
+        var x = document.getElementsByTagName('script')[0];  
+        x.parentNode.insertBefore(s, x);  
+    }  
+    if (window.attachEvent)  
+        window.attachEvent('onload', async_load);  
+    else  
+        window.addEventListener('load', async_load, false);  
+})();  
+</script>  
+<div id="mudroslov_widget_styled">  
+<a style="display: none;" class="mudroslov_link" href="http://www.mudroslov.ru" target="_blank"></a></div>  
+
+<!-- Калькулятор стоимости рыбы -->
+<div class="fishCalcBox">
+&nbsp;Калькулятор рыбы:<br>
+<form>
+<input id="rWeight" type="number" class="fishCount" placeholder="Вес рыбы:	"><br>
+<input type="button" class="fishCalc" value="Определить" onclick="addition();"><br>
+<div id="fishPrice"></div>
+</form>
+<script>
+function addition() {
+var rWeight = parseInt(document.getElementById('rWeight').value);
+var rPrice = 0.109;
+
+if (isNaN(rWeight)==true) rWeight=0;
+
+var rResult = rWeight * rPrice;
+
+document.getElementById("fishPrice").innerHTML = "<u>" +rWeight +" грамм рыбы</u> обойдутся Вам в <b>" + rResult + "</b> лей";
+}
+</script>
+</div>      
+	  
+	  
+	  
+	  </div>
+
+
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+        
+      </div>
+    </div>
+  </div>
+</div>					
+
+
+
+					</div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      
+                        <ul class="nav navbar-nav navbar-right cart-menu">
+                        
+                        <div title="Расскрыть меню"><li><a href="javascript:void(0)" onclick="showHide('cardBlock')"><span id="cartsum">Итог:&nbsp;</span> <span class="shoping-cart" id="ElemNumb">0</span></a></li><div>
+                    </ul>	
+<div id="final">
+		  
+</div>						
+                    </div><!-- /.navbar-collapse -->				
+                </div><!-- /.container -->
+            </nav>
+						
+        </header>
+
+        <section class="search-section">
+            <div class="container">
+                <div class="row subscribe-from">
+                    <div class="col-md-12">
+                        <form class="form-inline col-md-12 wow fadeInDown animated">
+                            <div class="form-group">
+                                <input type="email" class="form-control subscribe" id="email" placeholder="Search...">
+                                <button class="suscribe-btn" ><i class="pe-7s-search"></i></button>
+                            </div>
+                        </form><!-- end /. form -->
+                    </div>
+                </div><!-- end of/. row -->
+            </div><!-- end of /.container -->
+        </section><!-- end of /.news letter section -->
+
+<br>
+        
+<!-- Первый блок -->
+        <section class="new-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="titie-section wow fadeInDown animated ">
+                            <h1>Выберите блюдо</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    
+<br>	
+
+<input type="checkbox" id="spoiler" /> 
+<label for="spoiler">Салаты</label>
+<div class="spoiler">						
+					<div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.2s">
+                        <div class="product-item">
+                            <img src="./content/1.jpg" width="255" height="322" alt="">
+                            <div id="ButtonBuy1" onclick="AddedSuccessfull()" class="product-hover">
+                                <div class="product-meta">
+<div id="#Varza"></div>
+                                    <a id="buy1" onclick='buy("Varza"); AddedToCard()' href="#Varza"><i class="pe-7s-cart"></i>Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>VARZA</h3>
+                                    <span>3.68 лей</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+				
+					
+					
+                    <div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.4s">
+                        <div class="product-item">
+                            <img src="./content/2.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+<div id="#Cezar"></div>
+                                    <a id="buy2" onclick='buy("Cezar"); AddedToCard()' href="#Cezar"><i class="pe-7s-cart"></i>Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Cezar</h3>
+                                    <span>10.35 лей</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.6s">
+                        <div class="product-item">
+                            <img src="./content/3.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+<div id="#Shopschi"></div>
+                                    <a id="buy3" onclick='buy("Shopschi"); AddedToCard()' href="#Shopschi"><i class="pe-7s-cart"></i>Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Shopschi</h3>
+                                    <span>8.88</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Запасная позиция
+					<div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.8s">
+                        <div class="product-item">
+                            <img src="./4.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+<div id="#salat4"></div>
+                                    <a onclick='buy("salat4")' href="#salat4"><i class="pe-7s-cart"></i>Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Salat 4</h3>
+                                    <span>$56</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+					-->
+                </div>
+            </div>
+		</div>	
+</section>
+<!-- Конец первого блока. -->
+
+
+
+<!-- Первый блок. -->
+<section class="new-section2">
+    <div class="container">
+			
+<input type="checkbox" id="spoiler2" /> 
+
+<label for="spoiler2">Первое</label>
+
+<div class="spoiler2">						
+                    
+    <div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.2s">
+        <div onclick="showresult('1')" class="product-item">
+            <img src="./1.jpg" width="255" height="322" alt="">
+            <div class="product-hover">
+                <div class="product-meta">
+<div id="#pervoe1"></div>
+                    <a onclick='buy("pervoe1")' href="#pervoe1"><i class="pe-7s-cart"></i>Add to Cart</a>
+                </div>
+            </div>
+            <div class="product-title">
+                <a href="#">
+                    <h3>Первое 1</h3>
+                    <span id="salat">$26</span>
+                </a>
+            </div>
+        </div>
+    </div>
+				
+					
+					
+                    <div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.4s">
+                        <div class="product-item">
+                            <img src="./2.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+<div id="#pervoe2"></div>
+                                    <a onclick='buy("pervoe2")' href="#pervoe2"><i class="pe-7s-cart"></i>Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Первое 2</h3>
+                                    <span>$31</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.6s">
+                        <div class="product-item">
+                            <img src="./3.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+                                    <a href="#"><i class="pe-7s-cart"></i>Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Первое 3</h3>
+                                    <span>$21</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.8s">
+                        <div class="product-item">
+                            <img src="./4.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+                                    <a href="#"><i class="pe-7s-cart"></i>Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Первое 4</h3>
+                                    <span>$56</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+<!-- Конец первого блока. -->
+
+
+<!-- Первый блок. -->
+<section class="new-section3">
+            <div class="container">
+			
+<input type="checkbox" id="spoiler3" /> 
+<label for="spoiler3">Второе</label>
+<div class="spoiler3">						
+					<div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.2s">
+                        <div class="product-item">
+                            <img src="./1.jpg" width="255" height="322" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+
+                                    <a href="#"><i class="pe-7s-cart"></i>Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Blue Tshirt</h3>
+                                    <span>$26</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+				
+					
+					
+                    <div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.4s">
+                        <div class="product-item">
+                            <img src="./2.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+
+                                    <a href="#"><i class="pe-7s-cart"></i>Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>WOMAN shirt</h3>
+                                    <span>$31</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.6s">
+                        <div class="product-item">
+                            <img src="./3.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+                                    <a href="#"><i class="pe-7s-cart"></i>Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>YELLOW Tshirt</h3>
+                                    <span>$21</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.8s">
+                        <div class="product-item">
+                            <img src="./4.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+                                    <a href="#"><i class="pe-7s-cart"></i>Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Cool lingerie</h3>
+                                    <span>$56</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+<!-- Конец первого блока. -->
+
+
+
+
+
+
+
+<!-- Первый блок. -->
+<section class="new-section4">
+            <div class="container">
+			
+<input type="checkbox" id="spoiler4" /> 
+<label for="spoiler4">Напитки и остальное</label>
+<div class="spoiler4">						
+					<div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.2s">
+                        <div class="product-item">
+                            <img src="./1.jpg" width="255" height="322" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+
+                                    <a href="#"><i class="pe-7s-cart"></i>Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Blue Tshirt</h3>
+                                    <span>$26</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+				
+					
+					
+                    <div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.4s">
+                        <div class="product-item">
+                            <img src="./2.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+
+                                    <a href="#"><i class="pe-7s-cart"></i>Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>WOMAN shirt</h3>
+                                    <span>$31</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.6s">
+                        <div class="product-item">
+                            <img src="./3.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+                                    <a href="#"><i class="pe-7s-cart"></i>Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>YELLOW Tshirt</h3>
+                                    <span>$21</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 wow fadeInLeft animated" data-wow-delay="0.8s">
+                        <div class="product-item">
+                            <img src="./4.jpg" class="img-responsive" width="255" height="322" alt="">
+                            <div class="product-hover">
+                                <div class="product-meta">
+                                    <a href="#"><i class="pe-7s-cart"></i>Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">
+                                    <h3>Cool lingerie</h3>
+                                    <span>$56</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+<!-- Конец первого блока. -->
+
+
+
+
+
+
+
+
+
+        
+        <section class="contact-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="titie-section wow fadeInDown animated ">
+                            <h1>ОБРАТНАЯ СВЯЗЬ</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft animated">
+                        <div class="left-content">
+                            <h1><span>G</span>antina</h1>
+                            <h3>Добро пожаловать!</h3>
+                            <p>Бла - бла - бла.</p>
+                            <div class="contact-info">
+                                <p><b>Main Office:</b> 123 Elm St. New York City, NY</p>
+                                <p><b>Phone:</b> 1.555.555.5555</p>
+                                <p><b>Email:</b> info@yourdomain.com</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow fadeInRight animated">
+                        <form action="" method="" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Имя">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <textarea name="" id="" class="form-control" cols="30" rows="5" placeholder="Сообщение..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <input type="button" class="contact-submit" onclick="alert('Нам плевать на Вас. Спасибо.')" value="Отправить" />
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+        <!-- JQUERY -->
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
