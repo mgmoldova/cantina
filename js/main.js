@@ -22,14 +22,21 @@ function sum() {
     }
     console.log(total);
 }
+
 function del(key) {
-	console.log("del button pressed", key);
+    //console.log("del button pressed", key);
+    
 	if(menu[key]["n"] !=0) {
 		menu[key]["n"] -=1;
 	}
 	update();
 }
 
+function add(key) {
+	//console.log("del button pressed", key);
+	menu[key]["n"] +=1;
+	update();
+}
 function update() {
     var text = "<div style='display:;' id='cardBlock' class='menuBar'><table class='tbl-header' border='1'><caption>Выбранное:</caption> \
     <tr> \
@@ -38,26 +45,17 @@ function update() {
     <th>Цена</th> \
     </tr>";
 
-    for (var key in menu) {
-        if (menu.hasOwnProperty(key)) { 
-		if(menu[key]["n"] == 0) continue
-            text += "<tr>";
-		text += '<td>' +  key;
-            for(var subkey in menu[key])
-                if( menu[key].hasOwnProperty(subkey) ) 
-                    if(menu[key][subkey]==0)
-                        break;
-                    else
-                        text += '<td>' + menu[key][subkey]+'</td>';
-            text+="</tr>";
-        }
+
+    for (item in menu) {
+        if (menu[item]["n"] == 0) continue;
+        text += `<tr><td>${item}</td><td>${menu[item]["price"]}</td><td><button onclick="del('${item}')">[<]</button> ${menu[item]["n"]} <button onclick="add('${item}')">[>]</button></td></tr>`;
     }
     sum();
     text += '<tfoot class="tfootDeco"><tr><th id="total" colspan="2">Общая стоимость: </th><td>' + total.toFixed(2) + ' lei.</td></tr></tfoot>';
     document.getElementById("final").innerHTML = text + "</table></div>";
 	document.getElementById("cartsum").innerHTML = 'Итог:&nbsp; ' + total.toFixed(2) + '&nbsp;';
     document.getElementById("ElemNumb").innerHTML = number;
-	
+	AddedToCard();
 }
 
 function buy(item) {
@@ -82,6 +80,7 @@ function buy(item) {
                 //Если элемент с id-шником element_id не найден, то выводим сообщение
                 else alert("На данный момент корзина пустая!"); 
             }   
+
 function AddedToCard()
 {
 var buy1t = menu["Varza"]["n"];
